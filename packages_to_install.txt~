@@ -1,0 +1,9 @@
+# packages to installl
+npm install express
+npm install sleep
+npm install python-shell
+
+
+# install nodemon
+sudo -H npm install -g nodemon
+

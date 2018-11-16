@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resumaker</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src = "main_test.js"></script>
+</head>
+<body>
+
+	<header> 
+			<nav>
+				<h1> RESUMAKER </h1>
+				<ul>
+					<li style="float:right"><a class = "active" href="build.html" target="_blank"><span> Build a Resume </span></a></li>
+					<li><a href="createaccount.html" target="_blank"><span> Create Account </span></a></li>
+					<li><a href="signin.html" target="_blank"><span> Sign in </span></a></li>
+					<li><a href="resources.html" target="_blank"><span> Resources </span></a></li>
+					<li><a href="contacts.html" target="_blank"><span> Talk to us </span></a></li>
+				</ul>
+			</nav>
+		</header>
+
+	<h1 class = "third"><strong> Build your resume here! </strong></h1>
+
+	<h2 class = "fourth"> YOUR PERSONAL INFO </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "first_name"> <b>First name:</b> </label>
+		<input type="text" name="first_name" id = "first_name" placeholder="John" autofocus /><br>
+		<label for = "last_name"> <b>Last name:</b> </label>
+		<input type="text" name="last_name" id = "last_name" placeholder="Doe" /><br>
+		<label for = "user_email"> <b>Email:</b> </label>
+		<input type="email" name="user_email" id = "user_email" placeholder="johndoe@gotham.com" autocomplete="off" /><br>
+		<label for = "phone_number"> <b>Phone Number:</b> </label>
+		<input name="phone_number" type="number" id = "phone_number" placeholder="(987)-654-3210" /><br>
+		<label for = "location"> <b>Location:</b> </label>
+		<input type="text" name="location" id = "location" placeholder="Gotham City" autofocus /><br>
+		<label for = "linkedin"> <b>LinkedIn:</b> </label>
+		<input type="url" name="linkedin" id = "linkedin" autofocus /><br>
+		<label for="filename"> <b>Filename</b></label>
+	    <input type = "text" id="filename" value="" size="40" placeholder="title.md">
+	    <br/><br/>
+		<input onclick="saveFormAsTextFile()" type="button" value = "Make your resume" />
+		<input type="reset"><br><br>
+	</form>
+
+	<br><h2 class = "fourth"> YOUR EDUCATIONAL BACKGROUND </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "heading1"> <b>Section Heading: </b></label>
+		<input type="text" name="heading1" id="heading1" placeholder="Education" ><br>
+		<label for = "school_name"> <b>School Name:</b></label> 
+		<input type="text" name="school_name" id="school_name" placeholder="Gotham University"><br>
+		<label for = "school_location"> <b>School Location:</b></label> 
+		<input type="text" name="school_location" id="school_location" placeholder="Gotham City"><br>
+		<label for = "degree"> <b>Degree:</b></label> 
+		<input type="text" name="degree" id="degree" placeholder="B.S."><br>
+		<label for = "major"> <b>Major:</b></label> 
+		<input type="text" name="major" autocomplete="off" id="major" placeholder="Chemical Engineering"><br>
+		<label for = "gpa"> <b>GPA:</b></label> 
+		<input type="number" name="gpa" id="gpa" placeholder="Out of 4.0"><br>
+		<label for = "start_date"> <b>Start Date:</b></label> 
+		<input type="month" name="start_date" id="start_date" value="2018-07-22" /><br>
+		<label for = "end_date"> <b>End Date:</b></label> 
+		<input type="month" name="end_date" id="end_date" value="2018-07-22" /><br><br><br>
+		<input onclick = "saveFormAsTextFile()" type="button" value = "Make your resume" />
+		<input type="reset"><br><br>
+	</form>
+
+	<br><h2 class = "fourth"> YOUR WORK EXPERIENCE </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "heading2"> <b>Section Heading: </b></label> 
+		<input type="text" name="heading2" id = "heading_2" placeholder="Work Experience" ><br>
+		<label for = "company_name"><b>Company Name:</b></label> 
+		<input type="text" name="company_name" id = "company_name" placeholder="Detective Comics"><br>
+		<label for = "job_location"><b>Job Location:</b></label> 
+		<input type="text" name="job_location" id = "job_location" placeholder="Gotham City"><br>
+		<label for = "job_title"><b>Job Title:</b></label> 
+		<input type="text" name="job_title" id = "job_title" placeholder="B.S."><br>
+		<label for = "job_responsibilities"><b>Job Responsibilities:</b></label> 
+		<input name="job_responsibilities" id = "job_responsibilities" type="text"><br><br>
+		<label for = "start_date"><b>Start Date:</b></label>
+		<input type="month" name="start_date" id = "start_date" value="2018-07-22" /><br>
+		<label for = "end_date"><b>End Date:</b></label>
+		<input type="month" name="end_date" id ="end_date" value="2018-07-22" /><br><br><br>
+		<input onclick = "saveFormAsTextFile()" type="button" value = "Make your resume">
+		<input type="reset"><br><br>
+	</form>
+
+	</body>
+</html>

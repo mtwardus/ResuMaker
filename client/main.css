@@ -1,0 +1,428 @@
+body {
+	margin: 0; /* To get rid of any additonal white space from the website */
+	background: #262626; /* To change the body to #99ccff for all pages on the web application */
+	font-family: century gothic; /* To change the font to Century Gothic for all pages on the web application */
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 23.675%;
+    padding: 10px;
+    border-radius: 20px;
+    height: 150px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header{
+	background: #6666ff;
+	margin: 0px;
+	padding: 10px 15px 0 15px;
+}
+
+.second {
+	font-size: 30px;
+}
+
+header h1 {
+	margin: 0;
+	color: #003366;
+	display: inline;
+}
+
+nav ul {
+	list-style-type: none;
+   	margin: 0;
+   	padding: 0;
+   	overflow: hidden;
+   	background-color: dodgerblue;
+   	border-radius: 8px;
+}
+
+nav ul li {
+	border-right: 2px solid #6666ff;
+    float: left;
+    font-weight: 900;
+}
+
+li:last-child {
+    border-left: none;
+}
+
+nav ul li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav ul li a:hover {
+    background-color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+nav ul li a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+nav ul li a span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover span {
+  padding-right: 25px;
+}
+
+nav ul li a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+p {
+	/*background: #262626;*/
+	color: #262626;
+	padding: 5px;
+}
+
+/* Style the footer */
+.footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer li a {
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: 900;
+}
+
+/* Change the link color to #111 (black) on hover */
+.footer li a:hover {
+    background-color: #58FA58;
+}
+
+.third {
+	text-align: center;
+	color: greenyellow;
+	padding: 5px;
+}
+
+.fourth {
+	padding: 0 0 0 50px;
+	color: white;
+}
+
+.container {
+	padding: 0 0 0 50px;
+	color: white;
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 80px;
+    /*border-bottom: 2px solid navy;*/
+    background: #404040;
+    color: #737373;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+input[type=text]:focus {
+    background-color: #6666ff;
+}
+
+input[type=text]:hover {
+    width: 40%;
+}
+
+input[type=password] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 80px;
+    /*border-bottom: 2px solid navy;*/
+    background: #404040;
+    color: #737373;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+input[type=password]:focus {
+    background-color: #6666ff;
+}
+
+input[type=password]:hover {
+    width: 40%;
+}
+
+input[type=email] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 80px;
+    /*border-bottom: 2px solid navy;*/
+    background: #404040;
+    color: #737373;;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+input[type=email]:focus {
+    background-color: #6666ff;
+}
+
+input[type=email]:hover {
+    width: 40%;
+}
+
+input[type=number] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 80px;
+    /*border-bottom: 2px solid navy;*/
+    background: #404040;
+    color: #737373;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+input[type=number]:focus {
+    background-color: #6666ff;
+}
+
+input[type=number]:hover {
+    width: 40%;
+}
+
+input[type=month] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 80px;
+    /*border-bottom: 2px solid navy;*/
+    background: #404040;
+    color: #737373;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+input[type=month]:focus {
+    background-color: #6666ff;
+}
+
+textarea[type=message] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    /*border-bottom: 2px solid navy;*/
+    background: #404040;
+    color: #737373;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+textarea[type=message]:focus {
+    background-color: #6666ff;
+}
+
+textarea[type=message]:hover {
+    width: 40%;
+}
+
+input[type=url] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 80px;
+    /*border-bottom: 2px solid navy;*/
+    background: #404040;
+    color: #737373;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+input[type=url]:focus {
+    background-color: #6666ff;
+}
+
+input[type=url]:hover {
+    width: 40%;
+}
+
+input[type=button] {
+    background-color: #6666ff;
+    color: white;
+    margin-left: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+    font-family: century gothic;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+input[type=reset] {
+    background-color: #6666ff;
+    color: white;
+    margin-left: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+    font-family: century gothic;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/*.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}*/
+/*button {
+	background: navy;
+	color: greenyellow;
+	padding: 0px;
+	cursor: pointer; /* Pointer/hand icon 
+	margin-right: 0px;
+	float: left;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}*/
+
+/*
+nav ul {
+	margin: 0;
+	display: inline;
+}
+
+nav ul li {
+	background: #003366;
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 15px;
+	float: right;
+	margin-right: 5px; /* To space out the buttons by 5 px 
+}
+
+nav ul li a {
+	color: greenyellow;
+	text-decoration: none;
+}
+
+p {
+	background: #003366;
+	color: greenyellow;
+	padding: 5px;
+}
+
+button {
+	background: navy;
+	color: greenyellow;
+	padding: 10px;
+	cursor: pointer; /* Pointer/hand icon *
+	margin-right: 0px;
+	float: left;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/*.secondary {
+	float: left;
+}
+
+.third {
+	text-align: center;
+	color: greenyellow;
+	padding: 5px;
+}

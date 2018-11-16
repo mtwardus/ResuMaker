@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Welcome</a>
+  <a href="#templates" class="w3-bar-item w3-button w3-mobile">Templates</a>
+  <a href="#stuff" class="w3-bar-item w3-button w3-mobile">Stuff</a>
+  <a href="#RegLogin" class="w3-bar-item w3-button w3-mobile">Register</a>
+  <a href="#RegLogin" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Login</a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+  <img class="w3-image" src="https://www.w3schools.com/w3images/workbench.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+  <div class="w3-container w3-margin-top" id="templates">
+    <h3>Templates</h3>
+    <p>Browse our collection of templates...</p>
+  </div>
+  
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="./img/temp1.svg" alt="temp1" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Template 1</h3>
+        <p class="w3-large">
+	  <i class="fa fa-file-pdf"></i> <i class="fa fa-file-word"></i> <i class="fa fa-powerpoint"></i>
+	  <i class="fa fa-wordpress"></i> <i class="fa fa-file-alt"></i> <i class="fab fa-google-drive"></i>
+	  <i class="far fa-file-image"></i> <i class="fab fa-reddit"></i> <i class="fab fa-blogger"></i>
+	</p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Select Template</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="./img/temp2.svg" alt="temp2" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Template 2</h3>
+        <p class="w3-large">
+	  <i class="fa fa-file-pdf"></i> <i class="fa fa-file-word"></i> <i class="fa fa-powerpoint"></i>
+	  <i class="fa fa-wordpress"></i> <i class="fa fa-file-alt"></i> <i class="fab fa-google-drive"></i>
+	  <i class="far fa-file-image"></i> <i class="fab fa-reddit"></i> <i class="fab fa-blogger"></i>
+	</p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Select Template</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="./img/temp3.svg" alt="temp3" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Template 3</h3>
+        <p class="w3-large">
+	  <i class="fa fa-file-pdf"></i> <i class="fa fa-file-word"></i> <i class="fa fa-powerpoint"></i>
+	  <i class="fa fa-wordpress"></i> <i class="fa fa-file-alt"></i> <i class="fab fa-google-drive"></i>
+	  <i class="far fa-file-image"></i> <i class="fab fa-reddit"></i> <i class="fab fa-blogger"></i>
+	</p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Select Template</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding" id="stuff">
+    <!-- <div class="w3-col l4 m7"> -->
+      <h3>Stuff</h3>
+      <h6>We offer resume building solutions...<br /><br />
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br /><br />
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+    <!-- </div> -->
+  </div>
+  
+  <div class="w3-row w3-large w3-center" style="margin:32px 0">
+    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i>114 Evans Some Hall, Newark, DE</div>
+    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +00 151515</div>
+    <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: mail@mail.com</div>
+  </div>
+
+  <div class="w3-container" id="RegLogin">
+    <h2 style="cursor: pointer">
+      <input type="button" id="create" value="Create Account" style="background-color: #0066CC; color: white;" autofocus/>
+      <span style="padding: 5px"></span>
+      <input type="button" id="login" value="Login" style="background-color: #3BB300; color: white;"/>
+    </h2>
+    
+    <form id="create_account">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required id="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required id="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Password" required id="Password"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">Create Account</button></p>
+    </form>
+
+    <form id="login_account" style="display: None">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required id="Email2"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Password" required id="Password2"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">Login</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+  $( document ).ready(function() {
+      var create_button = $("#create");
+      var create_form   = $("#create_account");
+      var name          = $("#Name");
+      var email         = $("#Email");
+      var password      = $("#Password");
+
+      var login_button  = $("#login");
+      var login_form    = $("#login_account");
+      var email2        = $("#Email2");
+      var password2     = $("Password2");
+
+      create_button.click(function() {
+	  create_form.show();
+	  login_form.hide();
+      });
+      
+      create_form.submit(function() {
+	  console.log("sending new user data...");
+	  $.post("/create",
+		 {
+		     name: name.val(),
+		     email: email.val(),
+		     password: password.val()
+		 },
+		 function(data, status)
+		 {
+		     if (status == "success") {
+			 alert("Account Created...");
+		     } else {
+			 alert("oops???");
+		     }
+		 });
+	  
+      });
+      
+      login_button.click(function() {
+	  create_form.hide();
+	  login_form.show();
+      });
+
+      login_form.submit(function() {
+	  $.post("/login",
+		 {
+		     email: email2.val(),
+		     password: password2.val()
+		 },
+		 function(data, status)
+		 {
+		     if (status == "success") {
+			 name = JSON.stringify(data)
+			 alert("Welcome: " + name);
+		     } else {
+			 alert("Incorrect Password...");
+		     }
+		 });
+	  
+      });
+  });
+
+</script>
+
+</body>
+</html>

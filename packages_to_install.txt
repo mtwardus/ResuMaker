@@ -1,0 +1,11 @@
+# packages to installl
+npm install express
+npm install sleep
+npm install python-shell
+npm install --save sqlite3
+
+# install nodemon
+npm install -g nodemon
+
+# then run
+nodemon server.js

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Resumaker</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<h1> RESUMAKER </h1>
+			<ul>
+				<li><a href="build.html" target="_blank"><span> Build a resume </span></a></li>
+				<li style="float:right"><a class="active" href="createaccount.html#RegLogin?" target="_blank"><span> Create an account </span></a></li>
+				<li><a href="signin.html" target="_blank"><span> Sign in </span></a></li>
+				<li><a href="resources.html" target="_blank"><span> Resources </span></a></li>
+				<li><a href="contacts.html" target="_blank"><span> Talk to us </span></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1 class="third"><strong> Create your new account here! </strong></h1>
+
+	<div class="w3-container" id="RegLogin">
+    <h2 style="cursor: pointer">
+      <input type="button" id="create" value="Create Account" style="background-color: #0066CC; color: white;" autofocus/>
+      <span style="padding: 5px"></span>
+      <input type="button" id="login" value="Login" style="background-color: #3BB300; color: white;"/>
+    </h2>
+
+    <form id="create_account">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required id="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required id="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Password" required id="Password"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">Create Account</button></p>
+    </form>
+		<form id="login_account" style="display: None">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required id="Email2"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Password" required id="Password2"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">Login</button></p>
+    </form>
+  </div>
+	<script>
+	  $( document ).ready(function() {
+	      var create_button = $("#create");
+	      var create_form   = $("#create_account");
+	      var name          = $("#Name");
+	      var email         = $("#Email");
+	      var password      = $("#Password");
+
+	      var login_button  = $("#login");
+	      var login_form    = $("#login_account");
+	      var email2        = $("#Email2");
+	      var password2     = $("#Password2");
+
+	      create_button.click(function() {
+		  create_form.show();
+		  login_form.hide();
+	      });
+
+	      create_form.submit(function() {
+		  console.log("sending new user data...");
+		  $.post("/create",
+
+			 {
+			     name: name.val(),
+			     email: email.val(),
+			     password: password.val()
+			 },
+			 function(data, status)
+			 {
+			     console.log('data = \n', JSON.stringify(data));
+			     console.log('status = \n', status);
+			     if (data === "success...") {
+				 alert("Account Created...");
+			     } else {
+				 alert("oops???");
+			     }
+			 });
+
+	      });
+
+	      login_button.click(function() {
+		  create_form.hide();
+		  login_form.show();
+	      });
+
+	      login_form.submit(function() {
+		  $.post("/login",
+			 {
+			     email: email2.val(),
+			     password: password2.val()
+			 },
+			 function(data, status)
+			 {
+
+			     if (data != "fail...") {
+				 name = JSON.stringify(data);
+				 alert("Welcome: " + name);
+			     } else {
+				 alert("Incorrect Password...");
+			     }
+			 });
+
+	      });
+	  });
+
+	</script>
+
+</body>
+
+</html>
+
