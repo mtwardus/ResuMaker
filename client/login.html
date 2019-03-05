@@ -2,40 +2,60 @@
 <html>
 <head>
 	<title>Resumaker</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
 
-	<header>
-			<nav>
-				<h1> RESUMAKER </h1>
-				<ul>
-					<li><a href="build.html" target="_blank"><span> Build a resume </span></a></li>
-					<li><a href="createaccount.html" target="_blank"><span> Create Account </span></a></li>
-					<li style="float:right"><a class = "active" href="signin.html" target="_blank"><span> Sign in </span></a></li>
-					<li><a href="resources.html" target="_blank"><span> Resources </span></a></li>
-					<li><a href="contacts.html" target="_blank"><span> Talk to us </span></a></li>
-				</ul>
-			</nav>
-		</header>
+<body class="subpage">
 
-	<p><h1 class = "third"><strong> Sign in to your account here! </strong></h1></p>
+	<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">ResuMaker</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="build.html">Build a Resume</a>
+						<a href="login.html">Sign In/Create an Account</a>
+						<a href="resources.html">Resources</a>
+						<a href="contacts.html">Talk to us</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
 
-	<form action="/action_page.php">
+	<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-left">
+						<h2 style = "text-align: center;" >LOGIN</h2>
 
-  		<div class="container" class = "fourth">
-		    <label for="username"><b>Username: </b></label>
-		    <input type="text" placeholder="Enter Username" name="username" required><br>
+						<form action="/action_page.php" style = "text-align: center" class = "fourth" autocomplete="on" method="post">
+							<b>E-mail:</b> <input type="email" display: block; style = "margin-left: auto; margin-right: auto;" name="email" autocomplete="off"><br>
+							<b>Password:</b> <input type="password" display: block; style = "margin-left: auto; margin-right: auto;" name="password" autofocus>
+							<br>
+							<input type="button" display: block; style = "margin-left: auto; margin-right: auto;" value="Login">
+	  	<!---<div>
+		    <label for="name">Name:</label>
+		    <input type="text" id="name" name="user_name">
+	  	</div>
+	  
+	  	<div>
+		    <label for="mail">E-mail:</label>
+		    <input type="email" id="mail" name="user_mail">
+	  	</div>
+	  
+	  	<div>
+		    <label for="msg">Message:</label>
+		    <textarea id="msg" name="user_message"></textarea>
+	  	</div>
 
-		    <label for="password"><b>Password: </b></label>
-		    <input type="password" placeholder="Enter Password" name="password" required><br>
-
-      		<input type="checkbox" checked="checked" name="remember"> Remember me? <br>
-
-    		<input type="submit" value="Login">
-  		</div>
-
+	  	<div class="button">
+  			<button type="submit">Send your message</button>
+		</div>--->
 	</form>
 
+	</form>
 </body>
 </html>
+
+
