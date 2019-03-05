@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resumaker</title>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script type="text/javascript" src = "main_test.js"></script>
+</head>
+
+<script type="text/javascript">
+
+	function jobresponsibilites(){
+
+		var d1 = document.getElementById('job_responsibilities');
+
+		d1.insertAdjacentHTML('afterend', '&nbsp;<input name="job_responsibilities" type="text">');
+
+	}
+</script>
+
+<body class="subpage">
+
+	<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">ResuMaker</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="build.html">Build a Resume</a>
+						<a href="login.html">Sign In/Create an Account</a>
+						<a href="resources.html">Resources</a>
+						<a href="contacts.html">Talk to us</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+	<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-left">
+						<h2>YOUR PERSONAL INFO</h2>
+
+	<form name = "personal_info" onsubmit="return validateForm()" autocomplete="on" method="post" class = "fourth">
+		<label for = "first_name"> <b>First name:</b> </label>
+		<input type="text" name="first_name" id = "first_name" value="Aashiv" autofocus /><br>
+		<label for = "last_name"> <b>Last name:</b> </label>
+		<input type="text" name="last_name" id = "last_name" value="Patel" /><br>
+		<label for = "user_email"> <b>Email:</b> </label>
+		<input type="email" name="user_email" id = "user_email" value="aashiv@udel.edu" autocomplete="off" /><br>
+		<label for = "phone_number"> <b>Phone Number:</b> </label>
+		<input name="phone_number" type="text" id = "phone_number" value="(714)-757-5470" /><br>
+		<label for = "user_city"> <b>City:</b> </label>
+		<input type="text" name="user_city" id = "user_city" value="Middletown" autofocus /><br>
+		<label for = "user_state"> <b>State:</b> </label>
+		<select type="text" name="user_state" id = "user_state" value="Delaware" autofocus /><br>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			</select><br>
+		<label for = "linkedin"> <b>LinkedIn:</b> </label>
+		<input type="text" name="linkedin" id = "linkedin" value = "https://www.linkedin.com/in/aashiv-patel-67a111b3/" autofocus /><br>
+	    <br/><br/>
+		<input onclick="saveFormAsTextFile()" type="button" value = "Make your resume" />
+		<input type="reset"><br><br>
+	</form>
+
+	<br><h2 class = "fourth"> YOUR EDUCATIONAL BACKGROUND </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "heading1"> <b>Section Heading: </b></label>
+		<input type="text" name="heading1" id="heading1" value="Education" ><br>
+		<label for = "school_name"> <b>School Name:</b></label> 
+		<input type="text" name="school_name" id="school_name" value="University of Delaware"><br>
+		<label for = "school_city"> <b>City:</b> </label>
+		<input type="text" name="school_city" id = "school_city" value="Newark" autofocus /><br>
+		<label for = "school_state"> <b>State:</b> </label>
+		<select type="text" name="school_state" id = "school_state" value="Delaware" autofocus /><br>
+		<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			</select><br>
+		<label for = "degree"> <b>Degree:</b></label> 
+		<input type="text" name="degree" id="degree" value="Bachelors of Science"><br>
+		<label for = "major"> <b>Major:</b></label> 
+		<input type="text" name="major" autocomplete="off" id="major" value="Electrical Engineering"><br>
+		<label for = "gpa"> <b>GPA:</b></label> 
+		<input type="text" name="gpa" id="gpa" value="3.97"><br>
+		<label for = "start_date"> <b>Start Date:</b></label> 
+		<input type="month" name="school_start_1" id="school_start_1" value="2018-07-22" /><br>
+		<label for = "end_date"> <b>End Date:</b></label> 
+		<input type="month" name="school_end_1" id="school_end_1" value="2018-07-22" /><br><br><br>
+		<input onclick = "saveFormAsTextFile()" type="button" value = "Make your resume" />
+		<input type="reset"><br><br>
+	</form>
+
+	<br><h2> YOUR WORK EXPERIENCE </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "heading2"> <b>Section Heading: </b></label> 
+		<input type="text" name="heading2" id = "heading2" value="Work Experience" ><br>
+		<label for = "company_name"><b>Company Name:</b></label> 
+		<input type="text" name="company_name" id = "company_name" value="University of Delaware"><br>
+		<label for = "work_city"> <b>City:</b> </label>
+		<input type="text" name="work_city" id = "work_city" value="Newark" autofocus /><br>
+		<label for = "work_state"> <b>State:</b> </label>
+		<select type="text" name="work_state" id = "work_state" value="Delaware" autofocus /><br>
+		<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			</select><br>
+		<label for = "job_title"><b>Job Title:</b></label> 
+		<input type="text" name="job_title" id = "job_title" value = "Undergraduate Researcher"><br>
+		<label for = "job_responsibilities"><b>Job Responsibilities:</b></label> 
+		<input name="job_responsibilities" id = "job_responsibilities" type="text" value = "Looked for ways to maximize the efficiency of the cell. Compared them and concluded which back contact is more power efficient in different conditions; easily available and financially viable.">
+		<input type = "button" value = "Add" onclick="jobresponsibilites()"> <br><br>
+		<label for = "start_date"><b>Start Date:</b></label>
+		<input type="month" name="work_start_1" id = "work_start_1" value="2018-07-22" /><br>
+		<label for = "end_date"><b>End Date:</b></label>
+		<input type="month" name="work_end_1" id ="work_end_1" value="2018-07-22" /><br><br><br>
+		<input onclick = "saveFormAsTextFile()" type="button" value = "Make your resume">
+		<input type="reset"><br><br>
+	</form>
+
+	<br><h2> SKILLS </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "heading3"> <b>Section Heading: </b></label> 
+		<input type="text" name="heading3" id = "heading3" value="Skills" ><br>
+		<label for = "company_name"><b>Programming Languages:</b></label> 
+		<input type="text" name="programming_languages" id = "programming_languages" value="Python; Java; MATLAB; HTML/CSS; Multisim; Simetrix; and PV software such as PC1D; SCAPS-1D and Setfos."><br>
+		<label for = "job_location"><b>Languages:</b></label> 
+		<input type="text" name="languages" id = "languages" value="English; Gujarati; Hindi"><br>
+		<label for = "job_title"><b>Other Skills:</b></label> 
+		<input type="text" name="other_skills" id = "other_skills" value="Microsoft Office; Excellent Math and problem-solving skills; Strong numeracy skills; Understanding of Photovoltaic technology"><br><br><br>
+		<input onclick = "saveFormAsTextFile()" type="button" value = "Make your resume">
+		<input type="reset"><br><br>
+	</form>
+
+	</body>
+</html>

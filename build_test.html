@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resumaker</title>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script type="text/javascript" src = "main_test.js"></script>
+</head>
+<body class="subpage">
+
+	<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">ResuMaker</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="build.html">Build a Resume</a>
+						<a href="login.html">Sign In/Create an Account</a>
+						<a href="resources.html">Resources</a>
+						<a href="contacts.html">Talk to us</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+	<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-left">
+						<div class="tab"><h2>YOUR PERSONAL INFO</h2>
+
+	<form id = "buildform" autocomplete="on" action = "" method="post" class = "fourth">
+
+		<!-- Circles which indicates the steps of the form: -->
+		<div style="text-align:left;margin-top:40px;">
+		  	<span class="step"></span>
+		  	<span class="step"></span>
+		  	<span class="step"></span>
+		  	<span class="step"></span>
+		</div>
+
+		<label for = "first_name"> <b>First name:</b> </label>
+		<input type="text" name="first_name" id = "first_name" placeholder="John" oninput="this.className = ''" autofocus /><br>
+		<label for = "last_name"> <b>Last name:</b> </label>
+		<input type="text" name="last_name" id = "last_name" oninput="this.className = ''" placeholder="Doe" /><br>
+		<label for = "user_email"> <b>Email:</b> </label>
+		<input type="email" name="user_email" id = "user_email" oninput="this.className = ''" placeholder="johndoe@gotham.com" autocomplete="off" /><br>
+		<label for = "phone_number"> <b>Phone Number:</b> </label>
+		<input name="phone_number" type="text" id = "phone_number" oninput="this.className = ''" placeholder="(987)-654-3210" /><br>
+		<label for = "location"> <b>Location:</b> </label>
+		<input type="text" name="location" id = "location" oninput="this.className = ''" placeholder="Gotham City" autofocus /><br>
+		<label for = "linkedin"> <b>LinkedIn:</b> </label>
+		<input type="text" name="linkedin" id = "linkedin" oninput="this.className = ''" autofocus /><br>
+		<label for="filename"> <b>Filename</b></label>
+	    <input type = "text" id="filename" value="" size="40" oninput="this.className = ''" placeholder="title.md">
+	    <br/><br/>
+		<input onclick="saveFormAsTextFile()" type="button" value = "Make your resume" />
+		<input type="reset"><br><br>
+	</form>
+
+	<div class="tab"><br><h2> YOUR EDUCATIONAL BACKGROUND </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "heading1"> <b>Section Heading: </b></label>
+		<input type="text" name="heading1" id="heading1" oninput="this.className = ''" placeholder="Education" ><br>
+		<label for = "school_name"> <b>School Name:</b></label> 
+		<input type="text" name="school_name" id="school_name" oninput="this.className = ''" placeholder="Gotham University"><br>
+		<label for = "school_location"> <b>School Location:</b></label> 
+		<input type="text" name="school_location" id="school_location" oninput="this.className = ''" placeholder="Gotham City"><br>
+		<label for = "degree"> <b>Degree:</b></label> 
+		<input type="text" name="degree" id="degree" oninput="this.className = ''" placeholder="B.S."><br>
+		<label for = "major"> <b>Major:</b></label> 
+		<input type="text" name="major" autocomplete="off" id="major" oninput="this.className = ''" placeholder="Chemical Engineering"><br>
+		<label for = "gpa"> <b>GPA:</b></label> 
+		<input type="text" name="gpa" id="gpa" oninput="this.className = ''" placeholder="Out of 4.0"><br>
+		<label for = "start_date"> <b>Start Date:</b></label> 
+		<input type="month" name="start_date" id="start_date" oninput="this.className = ''" value="2018-07-22" /><br>
+		<label for = "end_date"> <b>End Date:</b></label> 
+		<input type="month" name="end_date" id="end_date" oninput="this.className = ''" value="2018-07-22" /><br><br><br>
+		<input onclick = "saveFormAsTextFile()" type="button" value = "Make your resume" />
+		<input type="reset"><br><br>
+	</form>
+
+	<div class="tab"><br><h2> YOUR WORK EXPERIENCE </h2>
+
+	<form autocomplete="on" method="post" class = "fourth">
+		<label for = "heading2"> <b>Section Heading: </b></label> 
+		<input type="text" name="heading2" id = "heading_2" oninput="this.className = ''" placeholder="Work Experience" ><br>
+		<label for = "company_name"><b>Company Name:</b></label> 
+		<input type="text" name="company_name" id = "company_name" oninput="this.className = ''" placeholder="Detective Comics"><br>
+		<label for = "job_location"><b>Job Location:</b></label> 
+		<input type="text" name="job_location" id = "job_location" oninput="this.className = ''" placeholder="Gotham City"><br>
+		<label for = "job_title"><b>Job Title:</b></label> 
+		<input type="text" name="job_title" id = "job_title" oninput="this.className = ''" placeholder="B.S."><br>
+		<label for = "job_responsibilities"><b>Job Responsibilities:</b></label> 
+		<input name="job_responsibilities" id = "job_responsibilities" oninput="this.className = ''" type="text"><br><br>
+		<label for = "start_date"><b>Start Date:</b></label>
+		<input type="month" name="start_date" id = "start_date" oninput="this.className = ''" value="2018-07-22" /><br>
+		<label for = "end_date"><b>End Date:</b></label>
+		<input type="month" name="end_date" id ="end_date" oninput="this.className = ''" value="2018-07-22" /><br><br><br>
+		<input onclick = "saveFormAsTextFile()" type="button" value = "Make your resume">
+		<input type="reset"><br><br>
+
+		<div style="overflow:auto;">
+  			<div style="float:right;">
+    			<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    			<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+  			</div>
+		</div>
+
+		
+	</form>
+
+	</body>
+</html>
